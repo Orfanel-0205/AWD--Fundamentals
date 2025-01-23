@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+     
+  }
+  .header {
+      display: inline-flex;  
+      position: fixed;
+      justify-content: center;
+      height: 5vh;
+      width: 100%;
+      top: 0;
+      z-index: 1;
+      background-color: rgb(43, 42, 42);
+      color: black;
+  
+      &:hover{
+          height: 12vh;
+  
+          & > .button{
+             & > a > button{
+              visibility: visible;
+  
+             }
+          }
+      }
+              & > .button {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 2rem;
+                  flex-direction: row;
+                  margin-left: 3px;
+  
+                  & > a {
+                      text-decoration: none;
+  
+                      & > button{
+                          padding: 6px 15px;
+                          display: flex;
+                          border: none;
+                          position: relative;
+                          color: white;
+                          font-family: "Playwrite DE VA", cursive;
+                          font-size: 12px;
+                          font-weight: 600;
+                          align-items: center;
+                          justify-content: center;
+                          gap: 1rem;
+                          visibility: hidden;
+                          background-color: transparent;
+  
+                           & > i{
+                              visibility: visible;
+                           }
+  
+                          &:hover{
+                              border-bottom: 2px solid red;
+                          }
+                      }
+              }
+      }
+  }
+  
